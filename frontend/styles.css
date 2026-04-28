@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #111827;
+  color: #f3f4f6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.room-card {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.room-card h3 {
+  margin-top: 0;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 0.45rem 0.7rem;
+  cursor: pointer;
+  color: #111827;
+  background: #93c5fd;
+  font-weight: 700;
+}
+
+button.ghost {
+  background: #4b5563;
+  color: #f9fafb;
+}
+
+.chip {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.chip-ok {
+  background: #065f46;
+  color: #ecfdf5;
+}
+
+.chip-alert {
+  background: #991b1b;
+  color: #fee2e2;
+}
+
+.metric {
+  margin: 0.3rem 0;
+}
+
+dialog {
+  border: 0;
+  border-radius: 12px;
+  width: min(90vw, 840px);
+  background: #111827;
+  color: #f3f4f6;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+dialog article {
+  padding: 1rem;
+}
+
+dialog header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
